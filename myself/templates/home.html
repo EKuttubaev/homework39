@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block content %}
+<h1 align="center">{{ header }}</h1>
+<h3 align="right">В целях практики пройденных уроков выполняется данное домашнее задание!</h3>
+<p align="justify">
+    <b>Lorem Ipsum</b>
+    <hr> is simply dummy text of the printing and typesetting industry.
+    <!-- Пробую написать комментарий-->
+    <dfn>Lorem Ipsum </dfn>has been the industry's standard dummy text ever since the 1500s,
+    <i>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</i>
+    <p>It has survived </p>not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+    <mark>like</mark>
+    <cite> Aldus PageMaker </cite>including versions of
+    <del>
+        <bdo dir="rtl" style="color:red">Lorem Ipsum.</bdo>
+    </del>
+    <ins>Lorem Ipsum.</ins>
+    В настоящий момент
+    <time>22:53</time>
+</p>
+<div class="card">
+    <div class="card-image">
+        <img src="{% static 'img/macos-sierra-2.jpg' %}" class="img-responsive" style="width:500px;">
+    </div>
+    <div class="card-header">
+        <div class="card-title h5">Sierra</div>
+
+    </div>
+
+    </div>
+</div>
+<a class="btn btn-success" href="/about">Go to the next page</a>
+{% endblock%}

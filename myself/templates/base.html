@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My homework 39</title>
+    <link href="{% static 'css/spectre.min.css'%}" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <section class="navbar-section">
+            <a href="/home" class="navbar-brand mr-2">Главная</a>
+            <a href="/about" class="btn btn-link">Про меня</a>
+            <a href="/contacts" class="btn btn-link">Контакты</a>
+            <a href="http://www.codifylab.com" class="btn btn-link">CodifyLab</a>
+        </section>
+        <section class="navbar-section">
+            <div class="input-group input-inline">
+                <input class="form-input" type="text" placeholder="search">
+                <button class="btn btn-primary input-group-btn">Search</button>
+            </div>
+        </section>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
